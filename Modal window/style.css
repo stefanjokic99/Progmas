@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'game_of_squidsregular';
+}
+
+body {
+    background-color: #fefefe;
+}
+
+.hidden-first,
+.hidden-second {
+    display: none !important;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    margin: 3rem 0;
+    letter-spacing: 2px;
+    color: #9b164e;
+}
+
+.container p {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.container .logo-holder {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 150px;
+}
+
+.container .logo-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container .sign-holder {
+    display: flex;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.container .sign-holder .sign-red,
+.container .sign-holder .sign-blue {
+    outline: 0;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.container .sign-holder .sign-red:hover,
+.container .sign-holder .sign-blue:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.container .sign-holder .sign-red {
+    background-color: #a11e1e;
+    border: 1px solid #4b1313;
+}
+
+.container .sign-holder .sign-blue {
+    background-color: #271ea1;
+    border: 1px solid #04032e;
+}
+
+.img-box {
+    width: 300px;
+    height: 80px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-main,
+.modal-message {
+    width: 400px;
+    position: relative;
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.modal-main p,
+.modal-message h4 {
+    padding: 1.5rem 0 1.7rem 0;
+}
+
+.modal-main .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: 0;
+    border: 0;
+    padding: 0.5rem;
+    background-color: #fff;
+    font-size: 1.2rem;
+    transition: 0.1s ease-in-out;
+}
+
+.modal-main .close-modal:hover {
+    cursor: pointer;
+    color: #a11e1e;
+}
+
+.modal-main .buttons button, 
+.modal-message .exit-message {
+    outline: 0;
+    border: 0;
+    padding: 0.5rem 0.9rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.modal-main .buttons .confirm {
+    background-color: #1d680e;
+}
+
+.modal-main .buttons .exit-modal, 
+.modal-message .exit-message {
+    background-color: #a11e1e;
+}
+
+.modal-main .buttons .confirm:hover, 
+.modal-main .buttons .exit-modal:hover, 
+.modal-message .exit-message:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
